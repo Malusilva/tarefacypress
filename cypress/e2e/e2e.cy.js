@@ -23,9 +23,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
         var quantidade = 2
 
-        //cy.addProdutos('Autumn Pullie', 'L', 'Green', quantidade)
-        //cy.addProdutos('Caesar Warm-Up Pant', '33', 'Purple', quantidade)
-       // cy.addProdutos('Beaumont Summit Kit', 'L', 'Orange', quantidade)
+        cy.addProdutos('Autumn Pullie', 'L', 'Green', quantidade)
+        cy.addProdutos('Caesar Warm-Up Pant', '33', 'Purple', quantidade)
+        cy.addProdutos('Beaumont Summit Kit', 'L', 'Orange', quantidade)
         cy.addProdutos('Bruno Compete Hoodie', 'XL', 'Green', quantidade)
 
         cy.get('.dropdown-toggle > .text-skin').click()
